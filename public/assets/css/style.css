@@ -42,19 +42,19 @@ button:focus {
   color: white;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 30%;
   -webkit-transform: translate(-50%, 20%);
   transform: translate(-50%, 20%);
   font-size: 7em;
   margin: 0;
   padding: 0 20px;
   font-family: 'Quicksand', sans-serif;
-  text-shadow: 0 0 20px #ff005b;
+  text-shadow: 0 0 20px #009999;
 }
 
 #neon:after {
   content: '[ WEB-SCRAPER ]';
-  color: #ff005b;
+  color: #009999;
   position: absolute;
   padding: 0 20px;
   top: 0;
@@ -71,7 +71,7 @@ button:focus {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #fe3a80;
+  background: #009999;
   z-index: -2;
   -webkit-filter: blur(40px);
   filter: blur(40px);
