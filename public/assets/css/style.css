@@ -1,4 +1,5 @@
 /************************************* Global CSS *************************************/
+
 /* @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt'); */
 
@@ -21,21 +22,16 @@ body {
 a:active {
   outline: none;
 }
+
 button:focus {
   outline: none;
 }
 
-
-
-
 /**************************** header CSS ****************************/
 
-
-
-
 .header {
-  background-image: url('../img/nyt-header.png');
-  background-color: #181818;
+  /* background-image: url('../img/nyt-header.png'); */
+  background-color: #cc99ff;
   background-size: 40% 40%;
   background-repeat: no-repeat;
   background-position: center 35%;
@@ -43,48 +39,47 @@ button:focus {
   width: 100%;
   height: var(--header-height);
   z-index: 100;
-  border-bottom: 5px solid rgba(255,255,255,0.2);
+  border-bottom: 5px solid rgba(255, 255, 255, 0.2);
 }
-
 
 #neon {
   color: white;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, 20%);
-	        transform: translate(-50%, 20%);
-	font-size: 7em;
-	margin: 0;
-	padding: 0 20px;
-	font-family: 'Quicksand', sans-serif;
-	text-shadow: 0 0 20px #ff005b;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, 20%);
+  transform: translate(-50%, 20%);
+  font-size: 7em;
+  margin: 0;
+  padding: 0 20px;
+  font-family: 'Quicksand', sans-serif;
+  text-shadow: 0 0 20px #ff005b;
 }
 
 #neon:after {
-	content: '[ WEB-SCRAPER ]';
-	color: #ff005b;
-	position: absolute;
-	padding: 0 20px;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	-webkit-filter: blur(15px);
-	        filter: blur(15px);
+  content: '[ WEB-SCRAPER ]';
+  color: #ff005b;
+  position: absolute;
+  padding: 0 20px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
 }
 
 #neon:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: #fe3a80;
-	z-index: -2;
-	-webkit-filter: blur(40px);
-	        filter: blur(40px);
-	opacity: 0.5;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fe3a80;
+  z-index: -2;
+  -webkit-filter: blur(40px);
+  filter: blur(40px);
+  opacity: 0.5;
 }
 
 .button-dark {
@@ -101,7 +96,7 @@ button:focus {
 
 .button-dark:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .button-group {
@@ -119,16 +114,10 @@ button:focus {
   height: var(--header-height);
 }
 
-
-
-
 /***************************** modal CSS *****************************/
 
-
-
-
 .modal-content {
-  background-image: url('../img/notepad-background.jpg');
+  /* background-image: url('../img/notepad-background.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   /* background-attachment: fixed; */
@@ -136,7 +125,6 @@ button:focus {
   border-radius: 0;
   font-family: 'Rock Salt', cursive;
   color: #777;
-
 }
 
 .modal-body {
@@ -172,6 +160,7 @@ button:focus {
   position: relative;
   cursor: pointer;
 }
+
 .noteTitle {
   display: inline-block;
   font-size: 2.5em;
@@ -185,23 +174,17 @@ button:focus {
   border: none;
 }
 
-
-
-
 /************************ panel CSS ************************/
 
-
-
-
 .storyPanel {
-	background-image: url('../img/panel-background.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: #ddd;
-	padding: 20px;
-	border-radius: 20px 0 20px 0;
-	border: 3px solid #ddd;
-	position: relative;
+  /* background-image: url('../img/panel-background.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ddd;
+  padding: 20px;
+  border-radius: 20px 0 20px 0;
+  border: 3px solid #ddd;
+  position: relative;
   margin: 50px 20px;
   opacity: 0.9;
 }
@@ -211,13 +194,13 @@ button:focus {
   border: 3px solid #ddd;
 }
 
-.imgBox:hover .storyImg{
+.imgBox:hover .storyImg {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .storyImg {
-	float: right;
+  float: right;
   -webkit-transition: -webkit-transform 300ms ease;
   transition: -webkit-transform 300ms ease;
   transition: transform 300ms ease;
@@ -225,23 +208,23 @@ button:focus {
 }
 
 .storyHeadline {
-	font-size: 3.5em;
-	font-style: italic;
+  font-size: 3.5em;
+  font-style: italic;
   -webkit-transition: color 300ms ease;
   transition: color 300ms ease;
 }
 
 .storyHeadline:hover {
-	color: #777;
+  color: #777;
 }
 
 .storyPanel a {
-	text-decoration: none;
-	color: #ddd;
+  text-decoration: none;
+  color: #ddd;
 }
 
 .storySummary {
-	font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 .storyButton {
@@ -253,7 +236,7 @@ button:focus {
   color: #ddd;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  margin-right:10px;
+  margin-right: 10px;
   border-radius: 10px 0 10px 0;
 }
 
@@ -269,48 +252,43 @@ button:focus {
   clear: both;
 }
 
-
-
 /************************ neon title animation CSS ************************/
-
 
 #neon:before {
   -webkit-animation-name: pulse;
-          animation-name: pulse;
+  animation-name: pulse;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-duration: 60ms;
-          animation-duration: 60ms;
+  animation-duration: 60ms;
 }
 
 @-webkit-keyframes pulse {
-	0% {
-		-webkit-filter: blur(30px);
-		        filter: blur(30px);
-	}
-	50% {
-		-webkit-filter: blur(40px);
-		        filter: blur(40px);
-	}
-	100% {
-		-webkit-filter: blur(30px);
-		        filter: blur(30px);
-
-}
+  0% {
+    -webkit-filter: blur(30px);
+    filter: blur(30px);
+  }
+  50% {
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+  }
+  100% {
+    -webkit-filter: blur(30px);
+    filter: blur(30px);
+  }
 }
 
 @keyframes pulse {
-	0% {
-		-webkit-filter: blur(30px);
-		        filter: blur(30px);
-	}
-	50% {
-		-webkit-filter: blur(40px);
-		        filter: blur(40px);
-	}
-	100% {
-		-webkit-filter: blur(30px);
-		        filter: blur(30px);
-
-}
+  0% {
+    -webkit-filter: blur(30px);
+    filter: blur(30px);
+  }
+  50% {
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+  }
+  100% {
+    -webkit-filter: blur(30px);
+    filter: blur(30px);
+  }
 }
