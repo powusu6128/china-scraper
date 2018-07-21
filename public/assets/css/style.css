@@ -1,7 +1,3 @@
-/************************************* Global CSS *************************************/
-
-/* @import url('https://fonts.googleapis.com/css?family=Quicksand');
-@import url('https://fonts.googleapis.com/css?family=Rock+Salt'); */
 
 :root {
   --header-height: 30em;
@@ -113,8 +109,6 @@ button:focus {
   width: 100%;
   height: var(--header-height);
 }
-
-/***************************** modal CSS *****************************/
 
 .modal-content {
   /* background-image: url('../img/notepad-background.jpg'); */

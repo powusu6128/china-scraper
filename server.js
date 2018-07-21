@@ -11,7 +11,7 @@ var path = require('path');
 //initializing the app
 var app = express();
 
-//setting up the database
+//setting up the database connection
 const config = require('./config/database');
 mongoose.Promise = Promise;
 mongoose
