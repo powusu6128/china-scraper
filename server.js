@@ -21,8 +21,6 @@ mongoose
   })
   .catch(err => console.log('There was an error with your connection:', err));
 
-//setting up favicon middleware
-// app.use(favicon(path.join(__dirname, 'public', 'assets/img/favicon.ico')));
 
 //setting up Morgan middleware
 app.use(logger('dev'));
@@ -43,8 +41,6 @@ app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/articles', express.static(path.join(__dirname, 'public')));
 app.use('/notes', express.static(path.join(__dirname, 'public')));
-
-
 
 //setting up routes
 var index = require('./controllers/index');

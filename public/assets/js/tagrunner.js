@@ -56,6 +56,7 @@ $(document).ready(function () {
         url: '/scrape/newArticles',
         type: 'GET',
         success: function (response) {
+      
           $('#numArticles').text(response.count);
         },
         error: function (error) {

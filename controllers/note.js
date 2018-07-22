@@ -4,6 +4,7 @@ const express = require('express'),
       db = require("../models");
 
 //get route to retrieve all notes for a particlular article
+// in the database
 router.get('/getNotes/:id', function (req,res){
   db.Article
     .findOne({_id: req.params.id})

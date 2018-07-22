@@ -4,7 +4,6 @@
 }
 
 body {
-  /* background-image: url('../img/brick-background.jpg'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 200%;
@@ -23,10 +22,10 @@ button:focus {
   outline: none;
 }
 
-/**************************** header CSS ****************************/
+/*header CSS */
 
 .header {
-  /* background-image: url('../img/nyt-header.png'); */
+  background-image: url('../img/newspaper.gif');
   background-color: #cc99ff;
   background-size: 40% 40%;
   background-repeat: no-repeat;
@@ -111,10 +110,8 @@ button:focus {
 }
 
 .modal-content {
-  /* background-image: url('../img/notepad-background.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
   background-position: center 12%;
   border-radius: 0;
   font-family: 'Rock Salt', cursive;
@@ -168,10 +165,9 @@ button:focus {
   border: none;
 }
 
-/************************ panel CSS ************************/
+/*panel CSS */
 
 .storyPanel {
-  /* background-image: url('../img/panel-background.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   color: #ddd;
@@ -189,8 +185,8 @@ button:focus {
 }
 
 .imgBox:hover .storyImg {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .storyImg {
@@ -246,7 +242,7 @@ button:focus {
   clear: both;
 }
 
-/************************ neon title animation CSS ************************/
+/*neon title animation CSS */
 
 #neon:before {
   -webkit-animation-name: pulse;

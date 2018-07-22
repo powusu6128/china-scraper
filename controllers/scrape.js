@@ -10,7 +10,7 @@ router.get("/newArticles", function (req, res) {
   //configuring options object for request-promist
   const options = {
     uri: 'https://www.nytimes.com/section/us',
-    transform: function (body) {
+    transform: (body) => {
       return cheerio.load(body);
     }
   };
@@ -19,6 +19,7 @@ router.get("/newArticles", function (req, res) {
     .find({})
     .then((savedArticles) => {
       //creating an array of saved article headlines
+      // using es6
       let savedHeadlines = savedArticles.map(article => article.headline);
 
       //calling request promist with options object
@@ -46,13 +47,15 @@ router.get("/newArticles", function (req, res) {
           }); //end of each function
 
           //adding all new articles to database
-
-          var countscrape ="";
           db.Article
             .create(newArticleArr)
-            .then(result => res.json({
-              count: result.length
-            })) //returning count of new articles to front end
+            .then((result) => {
+              db.Article
+                .find({}).then(result => res.json({
+                  count: result.length
+                }))
+
+            }) //returning count of new articles to front end
             .catch(err => {});
         })
         .catch(err => console.log(err)); //end of rp method
