@@ -44,13 +44,13 @@ app.use('/notes', express.static(path.join(__dirname, 'public')));
 
 //setting up routes
 var index = require('./controllers/index');
-var articles = require('./controllers/article');
-var notes = require('./controllers/note');
+var article = require('./controllers/article');
+var note = require('./controllers/note');
 var scrape = require('./controllers/scrape');
 
 app.use('/', index);
-app.use('/articles', articles);
-app.use('/notes', notes);
+app.use('/articles', article);
+app.use('/notes', note);
 app.use('/scrape', scrape);
 
 //starting server
