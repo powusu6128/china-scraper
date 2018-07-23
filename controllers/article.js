@@ -19,7 +19,7 @@ router.get('/save/:id', (req, res) => {
 router.get('/viewSaved',function (req, res){
     db.Article
         .find({})
-        .then(result => res.render('savedArticles', {
+        .then(result => res.render('savedarticles', {
             articles: result
         }))
         .catch(err => res.json(err));
