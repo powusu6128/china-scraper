@@ -1,4 +1,3 @@
-
 :root {
   --header-height: 30em;
 }
@@ -189,12 +188,45 @@ button:focus {
   transform: scale(1.2);
 }
 
-.storyImg {
-  float: right;
+img.storyImg {
+  /* float: right; */
+  position: relative;
+  width:225px;
+  height:225px;
   -webkit-transition: -webkit-transform 300ms ease;
   transition: -webkit-transform 300ms ease;
   transition: transform 300ms ease;
   transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+
+img.storyImg {
+  position:relative;
+  -webkit-animation: mymove 3s infinite;
+  /* Safari 4.0 - 8.0 */
+  transition: mymove 3s linear;
+  -webkit-animation-timing-function: linear;
+  /* Safari 4.0 - 8.0 */
+  animation: mymove 3s infinite;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    right: 300px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    right: 300px;
+  }
 }
 
 .storyHeadline {

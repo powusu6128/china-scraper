@@ -2,23 +2,28 @@
   <h1 id="neon">CHINA-SCRAPER</h1>
   <nav class="button-group">
     <button class="button-dark" id="scrape" data-toggle="modal" data-target="#alertModal">Scrape New Articles</button>
-    <a href="/articles/viewSaved"><button class="button-dark" id="viewSaved">View Saved Articles</button></a>
+    <a href="/articles/viewSaved">
+      <button class="button-dark" id="viewSaved">View Saved Articles</button>
+    </a>
   </nav>
 </header>
 <div class="filler"></div>
 
-{{#each articles}}
+{{#each articles}} 
   {{#unless saved}}
     <figure class="storyPanel clearfix">
       <a href="{{storyUrl}}" class="pull-right" target="_blank">
         <div class="imgBox">
-          <img src="{{imgUrl}}" alt="" class="storyImg" height="150">
-        </div>
+        <img src="{{imgUrl}}" alt="" class="storyImg">  
+      </div>
       </a>
-      {{#if storyUrl}}
-        <a href="{{storyUrl}}" class="storyLink" target="_blank">
-          <h2 class="storyHeadline">{{headline}}</h2>
-        </a>
+      {{#if storyUrl}}h
+        <div class="stories">
+             <a href="{{storyUrl}}" class="storyLink" target="_blank">
+               <h2 class="storyHeadline">{{headline}}</h2>
+            </a>
+        </div>
+       
       {{else}}
         <h3 class="storyHeadline">{{headline}}</h3>
       {{/if}}
@@ -26,10 +31,8 @@
       <h6 class="storySummary">{{summary}}</h6>
       <button class="storyButton" id="saveArticle" data-id="{{_id}}">Save Article</button>
     </figure>
-  {{/unless}}
-{{/each}}
-
-{{!-- Modal for alerting number of scraped articles --}}
+  {{/unless}} 
+{{/each}} {{!-- Modal for alerting number of scraped articles --}}
 <div id="alertModal" class="modal fade" role="dialog">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
@@ -37,7 +40,8 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body text-center">
-        <h2>You have scraped <span id="numArticles"></span> new articles</h2>
+        <h2>You have scraped
+          <span id="numArticles"></span> new articles</h2>
       </div>
     </div>
   </div>
@@ -51,7 +55,7 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
-        <h2>There was an error processing your request.  Please try again later.</h2>
+        <h2>There was an error processing your request. Please try again later.</h2>
       </div>
     </div>
   </div>
