@@ -199,34 +199,38 @@ img.storyImg {
   transition: transform 300ms ease, -webkit-transform 300ms ease;
 }
 
-
 img.storyImg {
   position:relative;
-  -webkit-animation: mymove 3s infinite;
+  -webkit-animation: mymove 10s infinite;
   /* Safari 4.0 - 8.0 */
-  transition: mymove 3s linear;
   -webkit-animation-timing-function: linear;
+ 
   /* Safari 4.0 - 8.0 */
-  animation: mymove 3s infinite;
+  animation: mymove 10s infinite;
   animation-timing-function: linear;
+
 }
 
 @-webkit-keyframes mymove {
+
   from {
     left: 0px;
   }
   to {
-    right: 300px;
+    left: 1300px;
   }
+
 }
 
 @keyframes mymove {
+
   from {
     left: 0px;
   }
   to {
-    right: 300px;
+    left: 1300px;
   }
+
 }
 
 .storyHeadline {
@@ -237,7 +241,7 @@ img.storyImg {
 }
 
 .storyHeadline:hover {
-  color: #777;
+  color: #000000;
 }
 
 .storyPanel a {
